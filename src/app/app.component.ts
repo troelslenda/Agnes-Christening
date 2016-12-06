@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
         <div class="container clearfix">
           <div class="row">
             <div class="col-md-8 col-md-offset-2 col-sm-12">
-              <img src="img/agnes.png" style="width:80%;" />
+              <img src="src/assets/images/agnes.png" style="width:80%;" />
               <h1>Agnes<br />Strand-Lenda</h1>
               <p class="roboto">dåb den 15. Januar 2017</p>
             </div>

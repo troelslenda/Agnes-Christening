@@ -1,38 +1,44 @@
-<!doctype>
+<!DOCTYPE html>
 <html>
-<head>
+  <head>
     <base href="/">
-    <title>Angular 2 Boilerplate</title>
+    <title>Agnes's dåb</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Load libraries -->
-    <!-- IE required polyfills, in this exact order -->
-    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
-    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
-    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
-    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <meta name="description" content="Den 15 januar 2017 døbes Agnes i Vigerslev Kirke">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="author" content="Ester &amp; Troels">
+    <meta property="og:title" content="Agnes's dåb">
+    <meta property="og:image" content="http://lenda.dk/daab/img/open_graph.png">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Google fonts - Roboto Condensed for headings, Open Sans for copy-->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,700%7COpen+Sans:300,400,700">
+    <link href="https://fonts.googleapis.com/css?family=Sahitya" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico" rel="stylesheet">
+
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="theme.pink.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
-    <script src="node_modules/rxjs/bundles/Rx.js"></script>
-    <script src="node_modules/angular2/bundles/angular2.js"></script>
-    <script src="node_modules/angular2/bundles/router.dev.js"></script>
-    <script src="node_modules/angular2/bundles/http.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+
+  <body data-spy="scroll" data-target="#navigation" data-offset="120">
 
 
-    <link rel="stylesheet" href="src/css/app.css">
-</head>
-<body>
-<my-app>Loading...</my-app>
-
-<script>
-    System.config({
-        packages: {
-            app: {
-                format: 'register',
-                defaultExtension: 'js'
-            }
-        }
-    });
-    System.import('app/boot')
-            .then(null, console.error.bind(console));
-</script>
-</body>
+    <my-app>Loading...</my-app>
+  </body>
 </html>

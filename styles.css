@@ -1,0 +1,30 @@
+
+
+/* your styles go here */
+
+.intro.image-background {
+  background: url('img/hearts-pattern.png') center center repeat;
+}
+.intro.image-background .overlay {
+  background: radial-gradient(transparent, rgba(0,0,0,.7)),
+  #c27baa;
+}
+
+
+.navbar-nav {
+  text-align: center;
+}
+
+.navbar-nav > li {
+  display: inline-block;
+}
+
+.form-group {
+  margin: 10px auto;
+  max-width:250px;
+}
+
+
+.list-group-item .lead {
+  margin-bottom: 0;
+}

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+declare var $:any;
 
 @Component({
     selector: 'my-app',
@@ -56,4 +57,18 @@ import { Component } from '@angular/core';
     </footer>
     `,
 })
-export class AppComponent { }
+export class AppComponent {
+
+    ngAfterViewInit() {
+        $(".header").sticky();
+        $('.scroll-to, #navigation a').click(function () {
+            event.preventDefault();
+            var full_url = this.href;
+            var parts = full_url.split("#");
+            var trgt = parts[1];
+
+            $('body').scrollTo($('#' + trgt), 800, {offset: -50});
+
+        });
+    }
+ }

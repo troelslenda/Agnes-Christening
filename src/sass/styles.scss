@@ -3,7 +3,7 @@
 /* your styles go here */
 
 .intro.image-background {
-  background: url('src/assets/images/hearts-pattern.png') center center repeat;
+  background: url('img/hearts-pattern.png') center center repeat;
 }
 .intro.image-background .overlay {
   background: radial-gradient(transparent, rgba(0,0,0,.7)),
@@ -27,15 +27,4 @@
 
 .list-group-item .lead {
   margin-bottom: 0;
-}
-
-@media (min-width: 1200px) {
-  .intro h1 {
-    font-size: 76px;
-  }
-}
-
-section {
-  padding-left: 15px;
-  padding-right: 15px;
 }

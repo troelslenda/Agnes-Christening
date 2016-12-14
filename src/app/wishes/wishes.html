@@ -2,11 +2,17 @@
   <div class="row services">
     <div class="col-md-12">
       <h2 class="heading">Ønsker</h2>
+      <p class="lead text-center">Her er vores gaveønsker til Agnes's dåb. Koordinering heraf Heidi Strand på <a href="sms:22573801">22573801</a></p>
       <div class="row">
           <ul class="list-group">
             <li *ngFor="let wish of wishes" class="list-group-item">
-              <div class="lead">{{ wish.wish }}</div>
-              <!--<small>https://www.stokke.com/DNK/da-dk/tilbeh%C3%B8r/4285.html</small>-->
+              <div *ngIf="wish.org_url">
+                  <div class="lead">{{ wish.wish }}  Se <a href="{{wish.org_url}}">link</a></div>
+              </div>
+
+              <div *ngIf="!wish.org_url" class="lead">{{ wish.wish }}</div>
+
+              <small>{{ wish.description }}</small>
             </li>
           </ul>
       </div>
